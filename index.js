@@ -1,5 +1,5 @@
 // module imports
-require('dotenv').config()
+// require('dotenv').config() blir gjort i package.json, under "scripts:" "dev"
 const express = require('express')
 const exphbs = require('express-handlebars')
 const app = express()
