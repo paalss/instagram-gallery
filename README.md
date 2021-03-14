@@ -9,10 +9,15 @@ Lag .env-fil med innhold:
 ACCESS_TOKEN="Sett inn Instagram access token"
 ```
 
-kjør i terminal
+installer
 
 ```
 npm install
+```
+
+serve
+
+```
 npm run dev
 ```
 

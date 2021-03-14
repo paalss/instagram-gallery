@@ -1,17 +1,9 @@
-<h1>{{title}}</h1>
-
-Lagt til:
-<ul>
-  <li>i dev environment
-    <ul>
-      <li>Bruker .env og package dotenv til å lagre variabler til request</li>
-    </ul>
-  </li>
-  <li>Kjører get request mot api med hjelp av "window.fetch for node"</li>
-  <li>Sende respons til index.handlebars, og printer dem ut</li>
-  <li>CSS til Handlebars</li>
-</ul>
-
-{{#each media}}
-    <img src="{{this.media_url}}" alt="{{this.caption}}">
-{{/each}}
+<div class="flex">
+  {{#each media}}
+  <a href="{{this.media_url}}" data-lightbox="gallery">
+    <div class="frame">
+      <img src="{{this.media_url}}" alt="{{this.caption}}">
+    </div>
+  </a>
+  {{/each}}
+</div>

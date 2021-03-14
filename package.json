@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
+    "lightbox2": "^2.11.3",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
