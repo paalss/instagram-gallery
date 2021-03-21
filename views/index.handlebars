@@ -1,9 +1,13 @@
 <div class="flex">
   {{#each media}}
-  <a href="{{this.media_url}}" data-lightbox="gallery" data-title="{{this.caption}}">
+  <a class="list-item" href="{{this.media_url}}" data-lightbox="gallery" data-title="{{this.caption}}">
     <div class="frame">
-      <img src="{{this.media_url}}" alt="{{this.caption}}">
+      <img class="gallery-img" src="{{this.media_url}}" alt="{{this.caption}}">
     </div>
   </a>
   {{/each}}
+  {{!-- For å fylle ut siste rad. Se CSS-tricks link i style.css --}}
+  {{!-- Forresten, det ser ut som det ikke er nødvendig. Kommenterer det derfor ut --}}
+  {{!-- <div class="frame">
+  </div> --}}
 </div>
