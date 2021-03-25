@@ -6,19 +6,21 @@
 </header>
 <nav></nav>
 <main>
-  <h2>Instagram-bilder</h2>
-  <div class="flex">
-    {{#each media}}
-    <a class="list-item" href="{{this.media_url}}" data-lightbox="gallery" data-title="{{this.caption}}">
-      <div class="frame">
-        <img class="gallery-img" src="{{this.media_url}}" alt="{{this.caption}}">
-      </div>
-    </a>
-    {{/each}}
-    {{!-- For å fylle ut siste rad. Se CSS-tricks link i style.css --}}
-    {{!-- Forresten, det ser ut som det ikke er nødvendig. Kommenterer det derfor ut --}}
-    {{!-- <div class="frame">
-    </div> --}}
+  <div class="container">
+    <h2>Instagram-bilder</h2>
+    <div class="flex">
+      {{#each media}}
+      <a class="list-item" href="{{this.media_url}}" data-lightbox="gallery" data-title="{{this.caption}}">
+        <div class="frame">
+          <img class="gallery-img" src="{{this.media_url}}" alt="{{this.caption}}">
+        </div>
+      </a>
+      {{/each}}
+      {{!-- For å fylle ut siste rad. Se CSS-tricks link i style.css --}}
+      {{!-- Forresten, det ser ut som det ikke er nødvendig. Kommenterer det derfor ut --}}
+      {{!-- <div class="frame">
+      </div> --}}
+    </div>
   </div>
 </main>
 <footer></footer>

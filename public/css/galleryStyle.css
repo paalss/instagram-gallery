@@ -1,3 +1,7 @@
+.lightbox, .lightboxOverlay {
+  padding: 0;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;

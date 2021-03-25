@@ -5,7 +5,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     line-height: 2rem;
-    scrollbar-color: #999999 #fff;
+    scrollbar-color: #999 #fff;
   }
   body {
     margin: 0;
@@ -23,14 +23,11 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-  .lightbox, .lightboxOverlay {
-    padding: 0;
-  }
   .mb-50 {
     margin-bottom: 50px;
   }
-  .mb-100 {
-    margin-bottom: 100px;
+  .mb-130 {
+    margin-bottom: 130px;
   }
   /* ––––––––––––––––––––– Type ––––––––––––––––––––– */
   h1 {
@@ -38,15 +35,15 @@
     font-size: 2.5rem;
     font-weight: 900;
     line-height: 3rem;
+    letter-spacing: .1rem;
   }
   .work h1 {
     display: inline;
   }
   h2 {
-    font-size: 2rem;
-  }
-  .work h2 {
     margin-top: 3rem;
+    font-size: 2rem;
+    letter-spacing: .1rem;
   }
   .work h3 {
     color: #3b3b3b;
@@ -63,11 +60,11 @@
     font-size: 1rem;
     font-weight: 600;
     margin: 0;
+    letter-spacing: normal;
   }
   /* ––––––––––––––––––––– Header ––––––––––––––––––––– */
   header {
     padding-top: 100px;
-    padding-bottom: 40px;
     color: #fff;
     /* border-bottom: 6px solid #000; */
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
@@ -75,6 +72,12 @@
     background: -webkit-linear-gradient(right, rgba(255, 51, 51, 0.5), rgba(255, 255, 255, 0.0));
     background: -moz-linear-gradient(right, rgba(255, 51, 51, 0.5), rgba(255, 255, 255, 0.0));
     background: linear-gradient(to left, rgba(255, 51, 51, 0.5), rgba(255, 255, 255, 0.0));
+  }
+  .index header {
+    padding-bottom: 40px;
+  }
+  .work header {
+    padding-bottom: 50px;
   }
   header:before {
     content: " ";
@@ -191,11 +194,22 @@
   nav a:hover, nav a:active, nav a:focus, nav a.open {
     font-weight: 900;
   }
+  .gray {
+    color: #929292;
+  }
   /* ––––––––––––––––––––– Main  ––––––––––––––––––––– */
   main {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 50px;
     background-color: #fff;
+    /* .work main skal ha nav-bar som ligger ved siden av main. nav-bar skal
+    «kaste skygge» over på main,lag derfor en invers skygge på main. */
+    -webkit-box-shadow: inset 0px 4px 32px -16px #000000;
+    box-shadow: inset 0px 4px 32px -16px #000000;
+  }
+  /* det første elementet i main trenger ikke margin-top, da main tar seg av dette  */
+  main .container>:first-child {
+    margin-top: 0;
   }
   .index .flex {
     display: flex;
@@ -224,12 +238,15 @@
     transform: scale(1.05);
     transition: 0.2s;
   }
-  main {
-    /* .work main skal ha nav-bar som ligger ved siden av main. nav-bar skal
-    «kaste skygge» over på main,lag derfor en invers skygge på main. */
-    -webkit-box-shadow: inset 0px 4px 32px -16px #000000;
-    box-shadow: inset 0px 4px 32px -16px #000000;
+  /* .index a.stripe {
+    display: block;
+    padding: 14px 5%;
+    color: #000;
+    background-color: #ccc;
   }
+  .index a.stripe:hover, .index a.stripe:focus {
+    font-style:italic;
+  } */
   .work img {
     width: 100%;
   }
@@ -252,9 +269,6 @@
     background: #fff;
     box-shadow: inset 0px 0px 0px 3px #000;
   }
-  /* .index figure {
-    margin: 0;
-  } */
   .work figure {
     background-color: #bbb;
     margin: 15px 0;
@@ -269,7 +283,11 @@
     border: 2px solid #3b3b3b;
     padding: 2px 7px;
   }
-  /* iframe {
+  /* Iframe heroku galleri */
+  /* html.height100, body.fritid, body.fritid main, body.fritid .container {
+    height: 100%;
+  }
+  iframe {
     width: 100%;
     height: 100%;
   } */
@@ -340,9 +358,6 @@
     padding-left: 14%;
     padding-right: 14%;
   }
-  .lightbox, .lightboxOverlay {
-    padding: 0;
-  }
   h1 {
     font-size: 3rem;
   }
@@ -395,6 +410,12 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
+  }
+  .index header .circle-frame {
+    margin-left: 18%;
+  }
+  .index header .container {
+    justify-content: flex-start;
   }
   .work main .container p, .work main .container li, .work figure {
     width: 630px;
