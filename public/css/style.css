@@ -238,7 +238,7 @@
     transform: scale(1.05);
     transition: 0.2s;
   }
-  /* .index a.stripe {
+  .index a.stripe {
     display: block;
     padding: 14px 5%;
     color: #000;
@@ -246,7 +246,7 @@
   }
   .index a.stripe:hover, .index a.stripe:focus {
     font-style:italic;
-  } */
+  }
   .work img {
     width: 100%;
   }
@@ -283,14 +283,6 @@
     border: 2px solid #3b3b3b;
     padding: 2px 7px;
   }
-  /* Iframe heroku galleri */
-  /* html.height100, body.fritid, body.fritid main, body.fritid .container {
-    height: 100%;
-  }
-  iframe {
-    width: 100%;
-    height: 100%;
-  } */
   /* ––––––––––––––––––––– Footer  ––––––––––––––––––––– */
   footer {
     padding-top: 40px;

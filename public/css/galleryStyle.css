@@ -2,11 +2,6 @@
   padding: 0;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /*
 Bra galleri kode:
 Adaptive Photo Layout with Flexbox | CSS-Tricks
@@ -17,6 +12,11 @@ ekvalenter
 .flex = ul
 .list-item = li
 */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .list-item {
   flex-grow: 1;
