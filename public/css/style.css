@@ -37,7 +37,7 @@
     line-height: 3rem;
     letter-spacing: .1rem;
   }
-  .work h1 {
+  .work h1, .gallery h1 {
     display: inline;
   }
   h2 {
@@ -45,7 +45,7 @@
     font-size: 2rem;
     letter-spacing: .1rem;
   }
-  .work h3 {
+  .work h3, .gallery h3 {
     color: #3b3b3b;
     font-size: 1.3rem;
     margin-top: 3rem;
@@ -76,7 +76,7 @@
   .index header {
     padding-bottom: 40px;
   }
-  .work header {
+  .work header, .gallery header {
     padding-bottom: 50px;
   }
   header:before {
@@ -108,7 +108,7 @@
   .index header .circle-frame {
     display: none;
   }
-  .work header a {
+  .work header a, .gallery header a {
     color: #fff;
     font-size: 3rem;
     text-decoration: none;
@@ -245,7 +245,7 @@
     background-color: #ccc;
   }
   .index a.stripe:hover, .index a.stripe:focus {
-    font-style:italic;
+    font-style: italic;
   }
   .work img {
     width: 100%;
